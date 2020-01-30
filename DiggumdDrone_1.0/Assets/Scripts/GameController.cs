@@ -8,6 +8,9 @@ using MoonSharp.Interpreter;
 
 public class GameController : MonoBehaviour
 {
+
+    public GameObject MainCamera;
+    public GameObject DroneCamera;
     public GameObject ExecuteButton;
     public GameObject inputField;
     public InputField InputCode;
@@ -59,6 +62,9 @@ public class GameController : MonoBehaviour
         //hides button and inputField
         inputField.SetActive(false);
         ExecuteButton.SetActive(false);
+        MainCamera.SetActive(false);
+        DroneCamera.SetActive(true);
+
 
         StartCoroutine(StartTheDrone());
     }
@@ -71,6 +77,12 @@ public class GameController : MonoBehaviour
             movementcontrol.Move(LuaSequence[i].ToString());
             yield return new WaitForSeconds(1f); //sets the delay of movements
         }
+    }
+
+  
+    void Start()
+    {
+        
     }
 
     
