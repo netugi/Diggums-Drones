@@ -15,5 +15,13 @@ function dig()
     sequence = sequence .. "d"
 end
 
+function goUp()
+    sequence = sequence .. "u";
+end
+
+function goDown()
+    sequence  = sequence .. "d";
+end
+
 function getSequence()
     

@@ -46,7 +46,17 @@ public class MovementControl : MonoBehaviour
         Debug.Log(facingDirection);
     }
 
-
+    void goUp(){
+        dronepos.y += 1f;
+        drone.transform.position = dronepos;
+    }
+    void goDown(){
+        if(dronepos.y <= 0.5) Debug.Log("cannot go lower");
+        else {
+            dronepos.y -= 1;
+            drone.transform.position = dronepos;
+        }
+    }
     public void Move(string sequence){
     if(facingDirection == 360 || facingDirection == -360) facingDirection = 0;
 
@@ -60,6 +70,12 @@ public class MovementControl : MonoBehaviour
                 break;
             case "l":
                 turnLeft();
+                break;
+            case "u":
+                goUp();
+                break;
+            case "d":
+                goDown();
                 break;
             default: break;
         }
