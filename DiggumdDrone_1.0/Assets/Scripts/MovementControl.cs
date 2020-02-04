@@ -74,7 +74,7 @@ public class MovementControl : MonoBehaviour
             case "u":
                 goUp();
                 break;
-            case "d":
+            case "n":
                 goDown();
                 break;
             default: break;

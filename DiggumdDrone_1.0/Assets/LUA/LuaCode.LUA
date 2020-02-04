@@ -20,7 +20,7 @@ function goUp()
 end
 
 function goDown()
-    sequence  = sequence .. "d";
+    sequence  = sequence .. "n";
 end
 
 function getSequence()
