@@ -10,19 +10,14 @@ public class GameUI : MonoBehaviour
 
 	public GameObject panelEditAI;
 	public GameObject panelLevelUI;
-	public Button ButtonEditAI;
-	public Button ButtonSaveAI;
 
 
 	void Start()
 	{
-		Button btnEdit = ButtonEditAI.GetComponent<Button>();
-		btnEdit.onClick.AddListener(OpenAIEditor);
-		Button btnSave = ButtonSaveAI.GetComponent<Button>();
-		btnSave.onClick.AddListener(OpenLevelUI);
+		
 	}
 
-	void OpenLevelUI()
+	public void OpenLevelUI()
 	{
 		panelEditAI.SetActive(false);
 		panelLevelUI.SetActive(true);
@@ -30,7 +25,7 @@ public class GameUI : MonoBehaviour
 		AIEditorIsOpen = false;
 	}
 
-	void OpenAIEditor()
+	public void OpenAIEditor()
 	{
 		panelEditAI.SetActive(true);
 		panelLevelUI.SetActive(false);
