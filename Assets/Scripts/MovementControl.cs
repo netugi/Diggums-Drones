@@ -15,7 +15,7 @@ public class MovementControl : MonoBehaviour
     void forward(){
 
         if (facingDirection == 0) {
-            dronepos.z += 1f;
+            dronepos.z += 1f * Time.deltaTime;
             drone.transform.position = dronepos;
         }
         else if(facingDirection == 90 || facingDirection == -270){
