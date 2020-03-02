@@ -10,13 +10,20 @@ public class MovementControl : MonoBehaviour
     Vector3 dronepos;
     float facingDirection; //stores where the drone is facing by angle
 
+    float speed = 0.000002f;
+    //--------------------test-----------------
+    private Vector3 targetpos;
+
+
+    //-----------------------------------------
 
     //moves one block towards the drone facing.
     void forward(){
 
         if (facingDirection == 0) {
-            dronepos.z += 1f;
-            drone.transform.position = dronepos;
+            dronepos.z += 1;
+            targetpos = dronepos;
+            //drone.transform.position = dronepos;
         }
         else if(facingDirection == 90 || facingDirection == -270){
             dronepos.x += 1f;
@@ -30,6 +37,11 @@ public class MovementControl : MonoBehaviour
             dronepos.z -= 1f;
             drone.transform.position = dronepos;
         }
+
+        float step = speed * Time.deltaTime;
+        drone.transform.position = Vector3.MoveTowards(dronepos, targetpos, step);
+
+
     }
 
     //Rotates drone to the right

@@ -65,7 +65,10 @@ public class GameController : MonoBehaviour
         MainCamera.SetActive(false);
         DroneCamera.SetActive(true);
 
+        // for(int i = 0; i < seqlen; i++){
 
+        //      movementcontrol.Move(LuaSequence[i].ToString());
+        //      }
         StartCoroutine(StartTheDrone());
     }
 
