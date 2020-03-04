@@ -10,7 +10,7 @@ public class registration : MonoBehaviour
 
     public Button submitButton;
 
-    public void CallRegister(){
+    public void CallRegister(){ 
         StartCoroutine(Register());
     }
 
@@ -20,7 +20,7 @@ public class registration : MonoBehaviour
         form.AddField("name", nameField.text);
         form.AddField("password", passwordField.text);
 
-        WWW www = new WWW("http://localhost:8888/sqlconnect/register.php", form);
+        WWW www = new WWW("http://localhost/sqlconnect/register.php", form);
         yield return www;
         
         if(www.text == "0"){
