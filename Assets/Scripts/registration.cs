@@ -7,6 +7,7 @@ public class registration : MonoBehaviour
     
     public InputField nameField;
     public InputField passwordField;
+    public InputField repwd;
 
     public Button submitButton;
 
@@ -15,20 +16,24 @@ public class registration : MonoBehaviour
     }
 
     IEnumerator Register(){
+        //http://localhost/sqlconnect/register.php
+        if(passwordField.text == repwd.text){
+            WWWForm form = new WWWForm();
+            form.AddField("name", nameField.text);
+            form.AddField("password", passwordField.text);
 
-        WWWForm form = new WWWForm();
-        form.AddField("name", nameField.text);
-        form.AddField("password", passwordField.text);
+            WWW www = new WWW("http://localhost:8888/sqlconnect/register.php", form);
+            yield return www;
+            
+            if(www.text == "0"){
+                Debug.Log("User created successfully");
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 
-        WWW www = new WWW("http://localhost/sqlconnect/register.php", form);
-        yield return www;
-        
-        if(www.text == "0"){
-            Debug.Log("User created successfully");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-
+            }else{
+                Debug.Log("User creation failed. " + www.text );
+            }
         }else{
-            Debug.Log("User creation failed. " + www.text );
+            Debug.Log("password did not match");
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,7 +186,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 208543772}
   m_OnClick:
     m_PersistentCalls:
@@ -463,7 +463,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 803416335}
   m_OnClick:
     m_PersistentCalls:
@@ -626,6 +626,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f479787407a8ba4393cbaa50a0574d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvl1: {fileID: 803416334}
+  lvl2: {fileID: 208543771}
+  lvl3: {fileID: 1263333071}
 --- !u!1 &1089273919
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +780,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1263333072}
   m_OnClick:
     m_PersistentCalls:
