@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour
         for(int i = 0; i < seqlen; i++){
 
             movementcontrol.Move(LuaSequence[i].ToString());
-            yield return new WaitForSeconds(1f); //sets the delay of movements
+            yield return new WaitForSeconds(0.4f); //sets the delay of movements
         }
     }
 
