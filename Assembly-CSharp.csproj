@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D274E599-B531-18F3-C534-EF87EF19176B}</ProjectGuid>
+    <ProjectGuid>{0B01144B-FD0D-A0BE-8DDF-1C88A83A0502}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DBmanager.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\AudioController.cs" />
+     <Compile Include="Assets\Scripts\gamecontrol\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\datamanager.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\EditExecute.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\FrontSensor.cs" />
@@ -120,19 +121,19 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -333,16 +334,16 @@
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Assets/Plugins/MoonSharp.Interpreter.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Assets/Plugins/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/earlbalageo/Desktop/dignew/DiggumsDronesFinal/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/earlbalageo/Documents/GitHub/Digg/Diggums-Drones/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.17f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -15,12 +15,15 @@ public class EditExecute : MonoBehaviour
 
     private string codeText;
 
-
+    private GameObject playerCamera;
+    private GameObject MainCamera;
     // public void getCode(){
     //     codeText = Code.text;
     // }
-    private void Awake() {
+    private void Start() {
         FieldIsOpen = false;
+        playerCamera = GameObject.FindGameObjectWithTag("dronecamera");
+        MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     public void EditCodeOnCall(){
