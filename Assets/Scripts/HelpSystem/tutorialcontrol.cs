@@ -38,7 +38,7 @@ public class tutorialcontrol : MonoBehaviour
     }
 
     public void executeprint(){
-        if(indexOfHelp != 5){
+        if(indexOfHelp != 6){
             StartCoroutine(print(helpText));
         }else
         {
@@ -51,7 +51,7 @@ public class tutorialcontrol : MonoBehaviour
     void Start()
     {
         indexOfHelp = 0;
-        helpText = new string[]{"hello world","Your mama", "is Amazing","come together", "hey jude"};
+        helpText = new string[]{"hello world!!","Welcome to Diggums Drones", "Learn How to Code the FUN ways","Lets start by programming the drone by calling functions", "a function is a block of code that performs tasks", "Now open your Text Editor, and type in the function forward()"};
         executeprint();
         indexOfHelp ++;
         //StartCoroutine(print("hello world"));
