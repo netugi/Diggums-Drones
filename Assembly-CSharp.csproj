@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\gamecontrol\LuaManager.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\Menuitems.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\PlayerControler.cs" />
+     <Compile Include="Assets\Scripts\HelpSystem\tutorialcontrol.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\logincontrol.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\lvlselect.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\menucontrol.cs" />

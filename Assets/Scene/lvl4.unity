@@ -18407,7 +18407,7 @@ MonoBehaviour:
   moveSpeed: 5
   movePoint: {fileID: 366714570}
   nextPos: {x: 0, y: 0, z: 0}
-  nextlvl: 
+  nextlvl: LoopIntro
 --- !u!1 &263785753
 GameObject:
   m_ObjectHideFlags: 0

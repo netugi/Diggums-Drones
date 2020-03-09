@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/lvl4.unity
     guid: 220d17e52557646eaaf135032af853ad
+  - enabled: 1
+    path: Assets/Scene/LoopIntro.unity
+    guid: 8a3458ef6803d4555b35601708f63d7e
+  - enabled: 1
+    path: Assets/Scene/lvl5.unity
+    guid: 3bf69e29017de472ea3003e8a5edfda2
+  - enabled: 1
+    path: Assets/Scene/lvl6.unity
+    guid: 4fbc037a058a843e1bdb459f000a2515
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
