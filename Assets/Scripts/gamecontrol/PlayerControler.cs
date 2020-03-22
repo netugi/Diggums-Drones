@@ -28,7 +28,6 @@ public class PlayerControler : MonoBehaviour
         string LuaSequence = LuaManager.GenerateLuaSequence();
         Debug.Log(LuaSequence);
         StartCoroutine(StartDrone(LuaSequence));
-        
     }
 
     IEnumerator StartDrone(string sequence){
@@ -84,6 +83,8 @@ public class PlayerControler : MonoBehaviour
             nextPos.z -= 1f;
         }
 
+        FindObjectOfType<AudioManager>().Play("DroneHover01");
+
     }
 
 
@@ -118,6 +119,7 @@ public class PlayerControler : MonoBehaviour
         if(datamanager.obstacleType == "diggable")
         {   
             
+            FindObjectOfType<AudioManager>().Play("DroneDig01");
             StartCoroutine(digeffect());
             
         }else

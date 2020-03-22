@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AudioScripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\Sound.cs" />
      <Compile Include="Assets\Scripts\DBmanager.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\AudioController.cs" />
      <Compile Include="Assets\Scripts\gamecontrol\CameraFollow.cs" />
