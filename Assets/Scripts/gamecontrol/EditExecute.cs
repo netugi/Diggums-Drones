@@ -17,6 +17,7 @@ public class EditExecute : MonoBehaviour
 
     private GameObject playerCamera;
     private GameObject MainCamera;
+
     // public void getCode(){
     //     codeText = Code.text;
     // }
@@ -29,8 +30,10 @@ public class EditExecute : MonoBehaviour
     public void EditCodeOnCall(){
         if(!FieldIsOpen){
             Debug.Log("Opening");
+            OpenKeyboard();
             Code.gameObject.SetActive(true);
             FieldIsOpen = true;
+            
 
         }
         else{
@@ -45,7 +48,12 @@ public class EditExecute : MonoBehaviour
         Code.gameObject.SetActive(false);
         
     }
-
+    
+    private TouchScreenKeyboard keyboard;
+    
+    public void OpenKeyboard(){
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+    }
 
     //makes runCode button clickable if some lines of codes was inputed.
     public void IsThereCode(){
