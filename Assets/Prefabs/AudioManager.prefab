@@ -70,3 +70,17 @@ MonoBehaviour:
       volume: 0.5
       pitch: 1
       source: {fileID: 0}
+  - name: WorkingMusic
+    sounds:
+    - clip: {fileID: 8300000, guid: 103fe354a620f094d81175414cc1111d, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}
+    - clip: {fileID: 8300000, guid: 40b76170fa7e30145bf412d4ca167f1a, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}
+    - clip: {fileID: 8300000, guid: 23633478d9f87484b883fd450510e307, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}

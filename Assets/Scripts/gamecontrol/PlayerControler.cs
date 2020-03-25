@@ -134,10 +134,6 @@ public class PlayerControler : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
             obs.GetComponent<Renderer>().material.color = Color.black;
             yield return new WaitForSeconds(0.2f);
-            obs.GetComponent<Renderer>().material.color = Color.green;
-            yield return new WaitForSeconds(0.2f);
-            obs.GetComponent<Renderer>().material.color = Color.black;
-            yield return new WaitForSeconds(0.2f);
             Destroy(obs);
     }
 

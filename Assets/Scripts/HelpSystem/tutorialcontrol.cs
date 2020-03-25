@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using System.Text.RegularExpressions;
 
 public class tutorialcontrol : MonoBehaviour
 {
@@ -10,18 +11,19 @@ public class tutorialcontrol : MonoBehaviour
     public Text mytext;
     public GameObject UIpanel;
     public Button next;
-    private string[] helpText;
+    public string[] helpText;
     private int indexOfHelp;
 
-    IEnumerator print(string[] introtext){
-        string temp = "";
+    public void print(string[] introtext){
+        /*string temp = "";
         foreach (char letter in introtext[indexOfHelp]){
             
             temp = temp + letter;
             mytext.text = temp;
 
-            yield return new WaitForSeconds(0.1f);
-        }
+            yield return new WaitForSeconds(0.01f);
+        }*/
+        mytext.text = Regex.Unescape(introtext[indexOfHelp]);
 
         next.gameObject.SetActive(true);
         
@@ -38,8 +40,8 @@ public class tutorialcontrol : MonoBehaviour
     }
 
     public void executeprint(){
-        if(indexOfHelp != 6){
-            StartCoroutine(print(helpText));
+        if(indexOfHelp < helpText.Length){
+            print(helpText);
         }else
         {
             UIpanel.gameObject.SetActive(false);
@@ -51,7 +53,13 @@ public class tutorialcontrol : MonoBehaviour
     void Start()
     {
         indexOfHelp = 0;
-        helpText = new string[]{"hello world!!","Welcome to Diggums Drones", "Learn How to Code the FUN ways","Lets start by programming the drone by calling functions", "a function is a block of code that performs tasks", "Now open your Text Editor, and type in the function forward()"};
+        /*helpText = new string[]{"Hello world!",
+            "To get started, we'll learn some basic commands you can give to your drone.",
+            "Lets start by programming the drone by calling some commands, called \"precedures\".", 
+            "Calling a procedure performs a series of tasks.", 
+            "Now, in the bottom-right hand corner of the screen you'll see a button to open the text editor",
+            "You can tap on that button to start editing the AI of your drone!",
+            "First, start out by typing the \"forward()\" command, then tap the play button to execute the code."};*/
         executeprint();
         indexOfHelp ++;
         //StartCoroutine(print("hello world"));
