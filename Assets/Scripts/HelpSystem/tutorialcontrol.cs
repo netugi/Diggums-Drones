@@ -15,70 +15,39 @@ public class tutorialcontrol : MonoBehaviour
     public string[] helpText;
     private int indexOfHelp;
 
-    public void print(string[] introtext){
+    public IEnumerator print(string[] introtext){
         string temp = "";
         foreach (char letter in introtext[indexOfHelp]){
             
             temp = temp + letter;
-            mytext.text = temp;
+            mytext.text = Regex.Unescape(temp);
 
-            //yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.01f);
         }
-        mytext.text = Regex.Unescape(introtext[indexOfHelp]);
+        mytext.text = Regex.Unescape(temp);
 
         next.gameObject.SetActive(true);
-        
     }
 
     public void nextHelp(){
-        
         next.gameObject.SetActive(false);
-        if(k == 0){
-            executeprint(helpText);
-        }
-        else{
-            executeprint(helpText2);
-        }
-
-
-        
-
+        executeprint();
         indexOfHelp++;
     }
 
     public void executeprint(){
         if(indexOfHelp < helpText.Length){
-            print(helpText);
-        }else
-        {
-            if(k == 1) SceneManager.LoadScene("lvl2");
-            k++;
-            UIpanel.gameObject.SetActive(false);
+            StartCoroutine(print(helpText));
         }
-
+        else {
+            UIpanel.SetActive(false);
+        }
     }
     
     // Start is called before the first frame update
     void Start()
     {
-        
-        k = 0;
         indexOfHelp = 0;
-        executeprint();
-        indexOfHelp ++;
-    }
-    public void help2next() {
-
-
-         if(k == 1){
-            
-             UIpanel.gameObject.SetActive(true);
-
-            indexOfHelp = 0;
-            executeprint(helpText2);
-            
-            
-        }
-        
+        nextHelp();
     }
 }
