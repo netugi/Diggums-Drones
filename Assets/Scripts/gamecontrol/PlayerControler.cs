@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerControler : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public Transform movePoint;
     public Vector3 nextPos;
-
+    public int level = 10; 
     
     private GameObject obs;
     public string nextlvl;
 
     private float facingDirection;
+   
 
+    
+    
 
     void Start()
     {
@@ -178,4 +182,11 @@ public class PlayerControler : MonoBehaviour
 
         
     }
+    
+ public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
 }
+

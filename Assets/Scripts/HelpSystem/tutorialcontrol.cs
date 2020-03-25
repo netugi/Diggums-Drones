@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEngine.SceneManagement;
 
 public class tutorialcontrol : MonoBehaviour
 {
@@ -15,14 +16,14 @@ public class tutorialcontrol : MonoBehaviour
     private int indexOfHelp;
 
     public void print(string[] introtext){
-        /*string temp = "";
+        string temp = "";
         foreach (char letter in introtext[indexOfHelp]){
             
             temp = temp + letter;
             mytext.text = temp;
 
-            yield return new WaitForSeconds(0.01f);
-        }*/
+            //yield return new WaitForSeconds(0.01f);
+        }
         mytext.text = Regex.Unescape(introtext[indexOfHelp]);
 
         next.gameObject.SetActive(true);
@@ -32,7 +33,13 @@ public class tutorialcontrol : MonoBehaviour
     public void nextHelp(){
         
         next.gameObject.SetActive(false);
-        executeprint();
+        if(k == 0){
+            executeprint(helpText);
+        }
+        else{
+            executeprint(helpText2);
+        }
+
 
         
 
@@ -44,6 +51,8 @@ public class tutorialcontrol : MonoBehaviour
             print(helpText);
         }else
         {
+            if(k == 1) SceneManager.LoadScene("lvl2");
+            k++;
             UIpanel.gameObject.SetActive(false);
         }
 
@@ -52,17 +61,24 @@ public class tutorialcontrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        k = 0;
         indexOfHelp = 0;
-        /*helpText = new string[]{"Hello world!",
-            "To get started, we'll learn some basic commands you can give to your drone.",
-            "Lets start by programming the drone by calling some commands, called \"precedures\".", 
-            "Calling a procedure performs a series of tasks.", 
-            "Now, in the bottom-right hand corner of the screen you'll see a button to open the text editor",
-            "You can tap on that button to start editing the AI of your drone!",
-            "First, start out by typing the \"forward()\" command, then tap the play button to execute the code."};*/
         executeprint();
         indexOfHelp ++;
-        //StartCoroutine(print("hello world"));
     }
+    public void help2next() {
 
+
+         if(k == 1){
+            
+             UIpanel.gameObject.SetActive(true);
+
+            indexOfHelp = 0;
+            executeprint(helpText2);
+            
+            
+        }
+        
+    }
 }
