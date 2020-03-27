@@ -5357,13 +5357,15 @@ MonoBehaviour:
   - Hello world!
   - To get started, we\'ll learn some basic commands you can give to your drone.
   - Lets start by programming the drone by calling some commands (also called \"functions\").
-  - Calling a command performs a series of tasks that your drone will carry out. For
-    instance, we can try calling the \"forward()\" command
+  - Calling a command performs a task (or series of tasks) that your drone will carry
+    out.
+  - For instance, we can try calling the \"forward()\" command to move your drone
+    forward by one block on the grid.
   - In the bottom-right corner of the screen you'll see a button to open the text
     editor
   - You can tap on that button to start editing the AI of your drone!
   - First, start out by typing the \"forward()\" command, then tap the play button
-    to execute the code. Our goal is to enter the black box in front of your drone
+    to execute the code. Our goal is to reach the star block in front of your drone
 --- !u!1 &241712577
 GameObject:
   m_ObjectHideFlags: 0
@@ -13104,7 +13106,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
   m_Color: {r: 0.06666667, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
