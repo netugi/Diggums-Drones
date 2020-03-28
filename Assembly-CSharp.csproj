@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\gamecontrol\datamanager.cs" />
     <Compile Include="Assets\Scripts\gamecontrol\EditExecute.cs" />
     <Compile Include="Assets\Scripts\gamecontrol\FrontSensor.cs" />
+    <Compile Include="Assets\Scripts\gamecontrol\LightFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\gamecontrol\LuaManager.cs" />
     <Compile Include="Assets\Scripts\gamecontrol\Menuitems.cs" />
     <Compile Include="Assets\Scripts\gamecontrol\Player.cs" />
