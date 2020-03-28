@@ -8,6 +8,7 @@ TagManager:
   - walls
   - diggable
   - dronecamera
+  - level
   layers:
   - Default
   - TransparentFX

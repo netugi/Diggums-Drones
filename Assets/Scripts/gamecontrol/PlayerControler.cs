@@ -9,9 +9,8 @@ public class PlayerControler : MonoBehaviour
     public float moveSpeed = 1f;
     public Transform movePoint;
     public Vector3 nextPos;
-    public int level = 10; 
-    
     private GameObject obs;
+    public int level = 10;
     public string nextlvl;
 
     private float facingDirection;
@@ -186,6 +185,18 @@ public class PlayerControler : MonoBehaviour
  public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
+    }
+ public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        level = data.level;
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+
     }
 
 }

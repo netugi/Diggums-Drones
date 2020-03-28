@@ -1,4 +1,5 @@
 ﻿public class Player
 {
-    public int level { get; internal set; }
+    public int level = 10;
+   
 }
