@@ -12,12 +12,9 @@ public class PlayerControler : MonoBehaviour
     private GameObject obs;
     public int level = 10;
     public string nextlvl;
+    private int defaultLayer = 1 << 0; // Default layer (where all blocks are)
 
     private float facingDirection;
-   
-
-    
-    
 
     void Start()
     {
@@ -67,21 +64,21 @@ public class PlayerControler : MonoBehaviour
 
         string tempface = checkFacingDirection();
 
-        if (tempface == "forward") //facing front
+        if (tempface == "forward" && Physics.OverlapSphere(new Vector3(nextPos.x, nextPos.y, nextPos.z+1), 0.01f, defaultLayer).Length == 0) //facing front
         {
             nextPos.z += 1;
             
         }
-        else if(tempface == "right") //facing right
+        else if(tempface == "right" && Physics.OverlapSphere(new Vector3(nextPos.x+1, nextPos.y, nextPos.z), 0.01f, defaultLayer).Length == 0) //facing right
         {
             nextPos.x += 1f;
 
         }
-        else if (tempface == "left" ) //facing left
+        else if (tempface == "left" && Physics.OverlapSphere(new Vector3(nextPos.x-1, nextPos.y, nextPos.z), 0.01f, defaultLayer).Length == 0) //facing left
         {
             nextPos.x -= 1f;
         }
-        else if(tempface == "back") //facing back
+        else if(tempface == "back" && Physics.OverlapSphere(new Vector3(nextPos.x, nextPos.y, nextPos.z-1), 0.01f, defaultLayer).Length == 0) //facing back
         {
             nextPos.z -= 1f;
         }

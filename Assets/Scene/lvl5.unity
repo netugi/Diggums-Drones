@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14346,6 +14346,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1cc85ad9f6e464471b6ee73baf0d35af, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1cc85ad9f6e464471b6ee73baf0d35af, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -23738,7 +23742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366714570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MovePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24867,7 +24871,7 @@ GameObject:
   - component: {fileID: 380368609}
   - component: {fileID: 380368611}
   - component: {fileID: 380368610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54720,7 +54724,7 @@ GameObject:
   - component: {fileID: 938838626}
   - component: {fileID: 938838625}
   - component: {fileID: 938838624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: finish
   m_TagString: Finish
   m_Icon: {fileID: 0}
@@ -84514,7 +84518,7 @@ GameObject:
   - component: {fileID: 1471298389}
   - component: {fileID: 1471298390}
   - component: {fileID: 1471298391}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: front sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

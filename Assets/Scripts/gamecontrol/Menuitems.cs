@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 public class NewBehaviourScript
-{
+{/*
     [MenuItem("Tools/Assign Floor Tile Material")]
     public static void AssignFloorTileMaterial()
     {
@@ -41,7 +41,7 @@ public class NewBehaviourScript
         {
             t.GetComponent<Renderer>().material = material;
         }
-    }
+    }*/
 
 
 }
