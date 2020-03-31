@@ -25,6 +25,10 @@ public class EditExecute : MonoBehaviour
         FieldIsOpen = false;
         playerCamera = GameObject.FindGameObjectWithTag("dronecamera");
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        codeText = PlayerPrefs.GetString("ScriptSaverKeyName");
+        Code.text = codeText;
+
+
     }
 
     public void EditCodeOnCall(){
@@ -66,6 +70,12 @@ public class EditExecute : MonoBehaviour
         
     }
     
+    public void saveThis()
+    {
+        codeText = Code.text;
+        PlayerPrefs.SetString("ScriptSaverKeyName", codeText);
+
+    }
    
 
 }
