@@ -19,6 +19,7 @@ public class PlayerControler : MonoBehaviour
     void Start()
     {
         
+        LuaManager.RegisterScripts();
         nextPos = movePoint.transform.position;
         movePoint.parent = null;
        
