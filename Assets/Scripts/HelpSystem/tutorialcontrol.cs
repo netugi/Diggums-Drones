@@ -15,7 +15,7 @@ public class tutorialcontrol : MonoBehaviour
     public string[] helpText;
     private int indexOfHelp;
 
-    public IEnumerator print(string[] introtext){
+    /*public IEnumerator print(string[] introtext){
         string temp = "";
         foreach (char letter in introtext[indexOfHelp]){
             
@@ -27,6 +27,13 @@ public class tutorialcontrol : MonoBehaviour
         mytext.text = Regex.Unescape(temp);
 
         next.gameObject.SetActive(true);
+    }*/
+
+    public void print(string[] introtext){
+        
+        mytext.text = Regex.Unescape(introtext[indexOfHelp]);
+        next.gameObject.SetActive(true);
+
     }
 
     public void nextHelp(){
@@ -37,7 +44,7 @@ public class tutorialcontrol : MonoBehaviour
 
     public void executeprint(){
         if(indexOfHelp < helpText.Length){
-            StartCoroutine(print(helpText));
+            print(helpText);
         }
         else {
             UIpanel.SetActive(false);
