@@ -29718,6 +29718,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &450996733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37749,6 +37760,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &586630842
@@ -58390,6 +58412,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &952272872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66360,6 +66393,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1078089850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71395,6 +71439,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1182531850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72081,6 +72136,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197167002}
   m_Enabled: 1
+--- !u!114 &1197167004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1197988397887874920, guid: 79d245af8d4265d4cb87f8c9fa21f01f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1605951495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197167002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc263478163a95645805fe5eca746876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197486054
 GameObject:
   m_ObjectHideFlags: 0
@@ -96332,6 +96399,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1625382318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104933,6 +105011,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1197167004}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UIButton01
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1773942074
