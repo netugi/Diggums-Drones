@@ -151,6 +151,10 @@ public class PlayerControler : MonoBehaviour
        SceneManager.LoadScene(_scene);
    }
 
+    public void Reload()
+    {
+       SceneManager.LoadScene("lvlselect");
+    }
     string checkFacingDirection(){
          if (facingDirection == 0) //facing front
         {
@@ -195,6 +199,11 @@ public class PlayerControler : MonoBehaviour
         position.z = data.position[2];
         transform.position = position;
 
+    }
+    public void ExitThisGame()
+    {
+        UnityEngine.Debug.LogError("Exit Game");
+        Application.Quit();
     }
 
 }
