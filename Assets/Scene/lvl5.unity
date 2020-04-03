@@ -18083,6 +18083,7 @@ MonoBehaviour:
   nextPos: {x: 0, y: 0, z: 0}
   level: 10
   nextlvl: lvl6
+  finishByClear: 0
 --- !u!1 &263785753
 GameObject:
   m_ObjectHideFlags: 0
@@ -113498,7 +113499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2003609678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119524,6 +119525,174 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128360071}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2128430086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[3]
+      value: 'For this, we will use the "for" loop. A simple for loop looks something
+        like this:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[4]
+      value: for count = 0, 20 do\n\tforward\nend
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[5]
+      value: What this means is that "count" will start at 0, and increase by 1 each
+        looping until it reaches 4.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[6]
+      value: In the end, the drone will do \"forward()\" 5 times in a row.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[7]
+      value: Try it out yourself!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[0]
+      value: Great job!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[1]
+      value: Calling the functions one a time is fine and all, but that'll get tiresome
+        if you have to call it 10 or 100 times.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855052643578636, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: helpText.Array.data[2]
+      value: And so, finally, we shall learn how to use a "loop" to do actions a whole
+        bunch of times with little effort.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652322, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137855053851652335, guid: f3d8b0e87f7bf3442b794c933c8a82f7,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3d8b0e87f7bf3442b794c933c8a82f7, type: 3}
 --- !u!1 &2128938691
 GameObject:
   m_ObjectHideFlags: 0

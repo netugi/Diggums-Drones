@@ -14,20 +14,24 @@ public class tutorialcontrol : MonoBehaviour
     public Button next;
     public string[] helpText;
     private int indexOfHelp;
+    private bool isVisible;
 
-    /*public IEnumerator print(string[] introtext){
-        string temp = "";
-        foreach (char letter in introtext[indexOfHelp]){
-            
-            temp = temp + letter;
-            mytext.text = Regex.Unescape(temp);
-
-            yield return new WaitForSeconds(0.01f);
+    public void ToggleTutorial() {
+        if(!isVisible) {
+            UIpanel.GetComponent<CanvasGroup>().interactable = true;
+            UIpanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
+            UIpanel.GetComponent<CanvasGroup>().alpha = 1;
+            indexOfHelp = 0;
+            isVisible = true;
+            nextHelp();
         }
-        mytext.text = Regex.Unescape(temp);
-
-        next.gameObject.SetActive(true);
-    }*/
+        else {
+            UIpanel.GetComponent<CanvasGroup>().interactable = false;
+            UIpanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
+            UIpanel.GetComponent<CanvasGroup>().alpha = 0;
+            isVisible = false;
+        }
+    }
 
     public void print(string[] introtext){
         
@@ -47,7 +51,10 @@ public class tutorialcontrol : MonoBehaviour
             print(helpText);
         }
         else {
-            UIpanel.SetActive(false);
+            UIpanel.GetComponent<CanvasGroup>().interactable = false;
+            UIpanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
+            UIpanel.GetComponent<CanvasGroup>().alpha = 0;
+            isVisible = false;
         }
     }
     
@@ -55,6 +62,7 @@ public class tutorialcontrol : MonoBehaviour
     void Start()
     {
         indexOfHelp = 0;
+        isVisible = true;
         nextHelp();
     }
 }

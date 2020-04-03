@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/lvl6.unity
     guid: 4fbc037a058a843e1bdb459f000a2515
+  - enabled: 1
+    path: Assets/Scene/lvlend.unity
+    guid: 721e20224f1e4e143a31c6dde0f329c8
   - enabled: 0
     path: Assets/Scene/Mainmenu.unity
     guid: 2618528396671452ab2c461b49be8b3d

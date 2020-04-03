@@ -10,7 +10,7 @@ public class PlayerData
     
 
 
-    public PlayerData(PlayerControler player)
+    public PlayerData(PlayerController player)
     {
         level = player.level;
         position = new float[3];
