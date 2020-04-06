@@ -37,8 +37,6 @@ public class EditExecute : MonoBehaviour
             OpenKeyboard();
             Code.gameObject.SetActive(true);
             FieldIsOpen = true;
-            
-
         }
         else{
             Debug.Log("closing");
@@ -56,7 +54,7 @@ public class EditExecute : MonoBehaviour
     private TouchScreenKeyboard keyboard;
     
     public void OpenKeyboard(){
-        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
+        //keyboard = TouchScreenKeyboard.Open(Code.text, TouchScreenKeyboardType.Default, false, true, false, false, "Enter code...");
     }
 
     //makes runCode button clickable if some lines of codes was inputed.

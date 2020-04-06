@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
     public float moveSpeed = 1f;
     public Transform movePoint;
     public Vector3 nextPos;
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
     public void Move(){
         string LuaSequence = LuaManager.GenerateLuaSequence();
-        Debug.Log(LuaSequence);
         StartCoroutine(StartDrone(LuaSequence));
     }
 
@@ -139,24 +139,24 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision other)
-   {
-       
-       if(other.gameObject.tag == "Finish"){
-           FinishLevel(nextlvl);
-       }
-        
-   }    
+    {
+        if(other.gameObject.tag == "Finish"){
+            LevelFinish();
+        } 
+    }
 
-   void FinishLevel(string _scene){
-       SceneManager.LoadScene(_scene);
-   }
+    void LevelFinish()
+    {
+        FindObjectOfType<LevelLoader>().LoadScene(nextlvl, "Level complete! Loading next level...");
+    }
 
     public void Reload()
     {
-       SceneManager.LoadScene("lvlselect");
+        FindObjectOfType<LevelLoader>().LoadScene("lvlselect", "Returning to level select...");
     }
+    
     string checkFacingDirection(){
-         if (facingDirection == 0) //facing front
+        if (facingDirection == 0) //facing front
         {
             return "forward";
             
@@ -181,18 +181,17 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
         
-        Debug.Log(GameObject.FindGameObjectsWithTag("diggable").Length);
         if(finishByClear && GameObject.FindGameObjectsWithTag("diggable").Length == 1)
         {
-            FinishLevel(nextlvl);
+            LevelFinish();
         }
     }
     
- public void SavePlayer()
+    public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
     }
- public void LoadPlayer()
+    public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
         level = data.level;
@@ -202,7 +201,6 @@ public class PlayerController : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
-
     }
     public void ExitThisGame()
     {
