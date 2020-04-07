@@ -1,7 +1,8 @@
 Android
 PlayerPath?
-C:/Users/Busker.000/Desktop/Random School Things/DiggumsDronesPlaytest02.apk
+C:/Users/Busker.000/Desktop/DiggumsDrones Playtest/DiggumsDronesPlaytest02.apk
 SceneListBegin?
+Assets/Scene/splash.unity
 Assets/Scene/lvlselect.unity
 Assets/Scene/lvl1.unity
 Assets/Scene/lvl2.unity
@@ -64,6 +65,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
 f6633ace6e530c0000f2ac6da4269c52 Unity.ProBuilder.dll:UnityEngine.ProBuilder.PolyShape
+9b9875783658e275d4f27b4e7b6435f2 Assembly-CSharp.dll:.PanelFader
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 507174d46dacbc5fe45e28485db5dd1e UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -137,6 +139,7 @@ dd7520b7d4e690e8c593273e7b9fbe80 Assembly-CSharp.dll:TMPro.Examples.TMP_TextEven
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 08ee418b801850b56a351565b9c8bb78 Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
 47930f3b40e24ef5b3b5e3d9ada7097a Assembly-CSharp.dll:TMPro.Examples.Benchmark01
+e798d42ebbacd77cf998dc7e52e8820a Assembly-CSharp.dll:.LevelLoader
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.menucontrol
 7e137e095707a3b24ce74dab72005bbe Assembly-CSharp.dll:.LightFollowPlayer
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
@@ -222,5 +225,3 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8d87fe5500e3077fa94103f53a800dd3 Assembly-CSharp.dll:.Registercontrol
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 ac8a86414e32fd3f5a3683b6a3408b76 Assembly-CSharp.dll:.SplashFade
-e798d42ebbacd77cf998dc7e52e8820a Assembly-CSharp.dll:.LevelLoader
-9b9875783658e275d4f27b4e7b6435f2 Assembly-CSharp.dll:.PanelFader
